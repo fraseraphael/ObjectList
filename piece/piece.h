@@ -1,17 +1,17 @@
 #pragma once
 /*==================================================================================
-Auteure : Marie-Claire Lewandowski
+Auteure : RaphaÃ«l Fraser
 Projet : Lab07-Jeu de Blokudoku
 Nom du fichier : point.h
 Date : 2021-04-19
-But : Piece du jeu Blokudoku (qui utilise le square qui hérite du rectangle)
+But : Piece du jeu Blokudoku (qui utilise le square qui hÃ©rite du rectangle)
 ==================================================================================*/
 
 // LES LIBRAIRIES
-#pragma once		 // Évite de réinclure le iostream et autres librairies...
+#pragma once		 // Ã‰vite de rÃ©inclure le iostream et autres librairies...
 #include <iostream>	 // Permet le input et output
 #include <cassert>	 // Permet d'inclure le assert (robustesse -> setteurs)
-#include "square.h"  // Objet square (qui hérite de l'objet rectangle)
+#include "square.h"  // Objet square (qui hÃ©rite de l'objet rectangle)
 using namespace std;
 
 // LA CLASSE PIECE
@@ -19,9 +19,9 @@ class piece {
 
 private:
 
-	square _piece[2][2];					// Pièce faite de 1,2,3 ou 4 square
+	square _piece[2][2];					// PiÃ¨ce faite de 1,2,3 ou 4 square
 
-// PROTOTYPES DES MÉTHODES (4)
+// PROTOTYPES DES MÃ‰THODES (4)
 public:
 
 	void setPiece(int line, int col, const square& q);
@@ -31,6 +31,6 @@ public:
 
 };
 
-// PROTOTYPE DES FONCTIONS PROPRES À L'OBJET PIECE (1)
+// PROTOTYPE DES FONCTIONS PROPRES Ã€ L'OBJET PIECE (1)
 
 ostream& operator<<(ostream& sortie, const piece& p);
