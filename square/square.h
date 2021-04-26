@@ -1,12 +1,12 @@
 /*==================================================================================
-Auteurs : Marie-Claire Lewandowski
+Auteurs :RaphaÃ«l Fraser
 Projet : Lab07-Jeu de Blokudoku
 Nom du fichier : square.h
 Date : 2021-04-08
-But : Objet quare hérité de rectangle (objet) qui permet de manipuler et d'afficher 
-des carrés composés de points (objet) de taille et de de couleurs différentes
-(couleur intérieure et couleurs des bordures différentes). En en assemblant 
-plusieurs, on peut créer des formes.
+But : Objet quare hÃ©ritÃ© de rectangle (objet) qui permet de manipuler et d'afficher 
+des carrÃ©s composÃ©s de points (objet) de taille et de de couleurs diffÃ©rentes
+(couleur intÃ©rieure et couleurs des bordures diffÃ©rentes). En en assemblant 
+plusieurs, on peut crÃ©er des formes.
 ==================================================================================*/
 
 #pragma once
@@ -16,32 +16,32 @@ plusieurs, on peut créer des formes.
 
 class square: public rectangle{
 
-	int _value;								// Numéro du carré/case
-	bool _active;							// Pour déter. si case occupée ou non
-	int _color;								// Couleur intérieure du carré (1 à 15)
-	int _borderColor;						// Couleur bordure du carré (1 à 15)
+	int _value;								// NumÃ©ro du carrÃ©/case
+	bool _active;							// Pour dÃ©ter. si case occupÃ©e ou non
+	int _color;								// Couleur intÃ©rieure du carrÃ© (1 Ã  15)
+	int _borderColor;						// Couleur bordure du carrÃ© (1 Ã  15)
 
 public:
 
-	square();								// Const. sans para. (tout à 0 ou false)
-	square(int x, int y,  int side,			// Const. avec 6 para.(dont 4 par défaut) 
+	square();								// Const. sans para. (tout Ã  0 ou false)
+	square(int x, int y,  int side,			// Const. avec 6 para.(dont 4 par dÃ©faut) 
 		int color = 0, int bdColor = 0, int value = 0, bool active=false);
 	~square();								// Destructeur
 
-	void setValue(int value);				// Setteur du numéro du carré/case
-	void setColor(int color);				// Setteur couleur intérieure du carré
-	void setBorderColor(int bdColor);		// Setteur couleur bordure du carré
-	void setActive(bool active);			// Setteur dét. si case occupée ou non
-	void setSquare(int x, int y,			// Setteur carré entier 7 var.
+	void setValue(int value);				// Setteur du numÃ©ro du carrÃ©/case
+	void setColor(int color);				// Setteur couleur intÃ©rieure du carrÃ©
+	void setBorderColor(int bdColor);		// Setteur couleur bordure du carrÃ©
+	void setActive(bool active);			// Setteur dÃ©t. si case occupÃ©e ou non
+	void setSquare(int x, int y,			// Setteur carrÃ© entier 7 var.
 		 int side, int color=0, int bdColor=0, int value=0, bool active= false);	
 
-	int getValue()const;					// Retourne numéro du carré/case
-	int getColor()const;					// Retourne couleur intérieure du carré
-	int getBorderColor()const;				// Retourne la couleur bordure du carré
-	bool isActive()const;					// Retourne vrai si case occupée
+	int getValue()const;					// Retourne numÃ©ro du carrÃ©/case
+	int getColor()const;					// Retourne couleur intÃ©rieure du carrÃ©
+	int getBorderColor()const;				// Retourne la couleur bordure du carrÃ©
+	bool isActive()const;					// Retourne vrai si case occupÃ©e
 
-	void draw(ostream& sortie) const;		// Aff. carré bleu + chiffre au centre
-	void drawFull(ostream& sortie)const;	// Aff. carré bleu + carré jaune centre
+	void draw(ostream& sortie) const;		// Aff. carrÃ© bleu + chiffre au centre
+	void drawFull(ostream& sortie)const;	// Aff. carrÃ© bleu + carrÃ© jaune centre
 
 
 };
